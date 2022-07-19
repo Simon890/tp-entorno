@@ -47,7 +47,7 @@ mostrar_menu() {
                 . findNames.sh
             ;;
             4)
-                #Funcion ejericio 4
+                . statsSentence.sh
             ;;
             5)
                 #Funcion ejericio 5
