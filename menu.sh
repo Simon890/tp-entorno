@@ -41,7 +41,7 @@ mostrar_menu() {
                 . statsWords.sh
             ;;
             2)
-                #Funcion ejericio 2
+                . statsUsageWords.sh
             ;;
             3)
                 #Funcion ejericio 3
