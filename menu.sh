@@ -44,7 +44,7 @@ mostrar_menu() {
                 . statsUsageWords.sh
             ;;
             3)
-                #Funcion ejericio 3
+                . findNames.sh
             ;;
             4)
                 #Funcion ejericio 4
