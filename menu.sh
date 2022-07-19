@@ -38,7 +38,7 @@ mostrar_menu() {
 
         case $REPLY in
             1)
-                #Funcion ejericio 1
+                . statsWords.sh
             ;;
             2)
                 #Funcion ejericio 2
