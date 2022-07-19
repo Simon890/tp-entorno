@@ -7,10 +7,11 @@ MENOR_PALABRA=""
 MAYOR_PALABRA=""
 PRIMERA_ITERACION=0
 TOTAL=0
+. get_palabra.sh
 for PALABRA in ${TEXTOARR[@]}
 do
     #Se eliminan los caracteres que no forman una palabra para dejas sólo los alfabéticos.
-    PFILTRADA=$(echo $PALABRA | sed 's/,//g' | sed 's/\.//g' | sed 's/://g' | sed 's/;//g' | sed 's/-//g' | sed 's/(//g' | sed 's/)//g' | sed 's/?//g' | sed 's/¿//g')
+    PFILTRADA=$(get_palabra $PALABRA)
     TOTAL=$(($TOTAL + ${#PFILTRADA}))
     if [[ $PRIMERA_ITERACION -eq 0 ]]
     then
