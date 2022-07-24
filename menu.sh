@@ -29,12 +29,12 @@ mostrar_menu() {
     echo ""
 
     #MOSTRAR MENU
-    OPCIONES=("Ejercicio 1" "Ejercicio 2" "Ejercicio 3" "Ejercicio 4" "Ejercicio 5" "Ejercicio 6" "Ejercicio 7" "Ejercicio 8" "Ejercicio 9" "Salir")
+    OPCIONES=("Ejercicio 1" "Ejercicio 2" "Ejercicio 3" "Ejercicio 4" "Ejercicio 5" "Ejercicio 6" "Ejercicio 7" "Ejercicio 8" "Ejercicio 9" "Cambiar Texto" "Salir")
     PS3="> "
     select OPCION in "${OPCIONES[@]}"
     do
-        #Si la opción es 10 (SALIR):
-        [[ $REPLY -eq 10 ]] && exit 0
+        #Si la opción es 11 (SALIR):
+        [[ $REPLY -eq 11 ]] && exit 0
 
         case $REPLY in
             1)
@@ -63,6 +63,9 @@ mostrar_menu() {
             ;;
             9)
                 #Funcion ejericio 9
+            ;;
+            10)
+                . cambiarTexto.sh
             ;;
             *)
                 echo "Opción incorrecta"
